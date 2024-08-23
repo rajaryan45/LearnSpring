@@ -14,7 +14,7 @@ public class App
     public static void main( String[] args )
     {
         ApplicationContext context = new ClassPathXmlApplicationContext("com/spring/configxml/projectConfing.xml");  
-        Alien objAlien = (Alien) context.getBean("alienBean");
+        Alien objAlien = (Alien) context.getBean("alienobj");
         objAlien.code();
     }
 }
